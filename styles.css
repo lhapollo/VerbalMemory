@@ -1,0 +1,100 @@
+:root {
+    --bg-col: rgb(188, 200, 238);
+    --box-col: rgb(238, 226, 188);
+}
+
+body, .word-output {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    background: linear-gradient(var(--bg-col) 0%, white 100%);
+}
+
+.title h1, .title p {
+    text-align: center;
+}
+
+.title h1 {
+    font-family: 'Rubik Mono One', sans-serif;
+    font-size: 5em;
+}
+
+.title p {
+    font-family: 'Rubik', sans-serif;
+    font-size: 2em;
+}
+
+.word-output {
+    display: flex;
+    background-color: var(--box-col);
+    height: 20vh;
+    border: medium solid black;
+}
+
+.word-output h3 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 3em;
+}
+
+.input-container {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 1vh;
+    height: 10vh;
+}
+
+.game_button {
+    width: 40%;
+    height: 100%;
+    font-family: 'Kanit', sans-serif;
+    font-size: 2em;
+    background-color: rgb(188, 188, 238);
+}
+
+.game_button:hover {
+    background-color: rgb(226, 188, 238);
+    cursor: pointer;
+}
+
+#bottom {
+    display: flex;
+    justify-content: center;
+}
+
+.message-container, .score-container, .lives-container {
+    margin-top: 2vh;
+    display: flex;
+}
+
+.message-container {
+    height: 10vh;
+    width: 40%;
+    justify-content: center;
+}
+
+.lives-container {
+    height: 10vh;
+    width: 30%;
+    justify-content: right;
+}
+
+.score-container {
+    height: 10vh;
+    width: 30%;
+    justify-content: left;
+}
+
+span {
+    font-size: 2.5em;
+    font-family: 'Work Sans', sans-serif
+}
+
+span + span {
+    margin-left: 15px;
+}

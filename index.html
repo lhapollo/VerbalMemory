@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>VERBAL MEMORY</title>
+    <link rel="stylesheet" href="./styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rubik+Mono+One&family=Rubik:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Kanit:wght@200&display=swap"
+      rel="stylesheet"
+    />
+    <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@300&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <div class="container">
+      <div class="title">
+        <h1>VERBAL MEMORY</h1>
+        <p>
+          For each word that pops up, is it a word that you HAVE or HAVE NOT
+          seen before?
+        </p>
+      </div>
+      <div class="word-output">
+        <h3 id="output"></h3>
+      </div>
+      <div class="input-container">
+        <button class="game_button" id="old">SEEN</button>
+        <button class="game_button" id="new">NEW</button>
+      </div>
+      <section id="bottom">
+        <div class="score-container">
+            <span>SCORE: </span>
+            <span id="score"></span>
+        </div>
+        <div class="message-container">
+            <span id="message"></span>
+        </div>
+        <div class="lives-container">
+            <span>LIVES: </span>
+            <span id="lives"></span>
+        </div>
+      </section>
+    </div>
+  </body>
+  <script src="./script.js"></script>
+</html>
